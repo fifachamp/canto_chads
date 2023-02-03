@@ -17,7 +17,7 @@ export default function Home() {
   const [amountToMint, setAmountToMint] = useState(1)
   const [maxChads, setMaxChads] = useState(2222)
   const [totalSupply, setTotalSupply] = useState(0)
-  const [priceFormatted, setPriceFormatted] = useState(0)
+  const [priceFormatted, setPriceFormatted] = useState(111)
   const {chain} = useNetwork()
 
   useEffect(() => {
