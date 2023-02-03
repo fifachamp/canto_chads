@@ -47,8 +47,27 @@ const canto_testnet = {
   },
 }
 
+const canto_mainnet = {
+  id: 7700,
+  name: 'Canto',
+  network: 'canto',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'Canto',
+    symbol: 'CANTO',
+  },
+  rpcUrls: {
+    public: { http: ['https://canto.slingshot.finance/'] },
+    default: { http: ['https://canto.slingshot.finance/'] },
+  },
+  blockExplorers: {
+    etherscan: { name: 'Explorer', url: 'https://evm.explorer.canto.io/' },
+    default: { name: 'Explorer', url: 'https://evm.explorer.canto.io/' },
+  },
+}
+
 const { chains, provider } = configureChains(
-  [canto_testnet],
+  [canto_mainnet],
   [
     alchemyProvider({ apiKey: process.env.ALCHEMY_ID }),
     publicProvider()
@@ -81,7 +100,7 @@ function Chads({ Component, pageProps }) {
         chains={chains} 
         modalSize="compact"
         avatar={CustomAvatar}
-        initialChain={canto_testnet}
+        initialChain={canto_mainnet}
         >
         <Component {...{...pageProps}} />
       </RainbowKitProvider>

@@ -3,7 +3,6 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { ethers } from 'ethers'
 import ChadsJson from '../../artifacts/contracts/CantoChads.sol/CantoChads.json'
-import NumericInput from 'react-numeric-input';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNetwork } from 'wagmi'
@@ -36,7 +35,7 @@ export default function Home() {
 
     const chadContract = await new ethers.Contract(CONTRACT_ADDRESS, ChadsJson.abi, provider)
     setContract(chadContract)
-    
+
     const totalSupply = (await chadContract.totalSupply()).toNumber()
     setTotalSupply(totalSupply)
     
