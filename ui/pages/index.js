@@ -113,9 +113,9 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
       </Head>
-      {/* <audio loop autoPlay className={styles.audio}>
-        <source src="theme.mp3" type="audio/mpeg"/>
-      </audio>*/}
+      <audio loop autoPlay className={styles.audio}>
+        <source src="/kill-everybody.mp3" type="audio/mpeg"/>
+      </audio>
       <ToastContainer />
       <main className={`${styles.main} mt-12 lg:mt-20`}>
         <div className="flex flex-col lg:flex-row px-8 lg:px-20">
