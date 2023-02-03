@@ -109,11 +109,10 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>CANTO CHADS</title>
-        <meta name="description" content="1111 Chads minting on Canto" />
+        <meta name="description" content="2222 Chads minting on Canto" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
-        <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet"/>
       </Head>
       {/* <audio loop autoPlay className={styles.audio}>
         <source src="theme.mp3" type="audio/mpeg"/>

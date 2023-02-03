@@ -4,19 +4,14 @@ import { useEffect } from "react";
 import {
   getDefaultWallets,
   RainbowKitProvider,
-  midnightTheme,
-  AvatarComponent,
 } from '@rainbow-me/rainbowkit';
-import { canto } from 'wagmi/chains';
 import {
-  chain,
   configureChains,
   createClient,
   WagmiConfig,
 } from 'wagmi';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
-import { Chain } from '@wagmi/core'
 
 const CustomAvatar = ({size}) =>
   <div
