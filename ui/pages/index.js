@@ -26,7 +26,6 @@ export default function Home() {
 
   const attemptContractConnect = async () => {
     if (!window.ethereum) return
-    console.log('CHAIN AND TARGET CHAIN: ',chain, TARGET_CHAIN)
     if (chain && `${chain.id}` !== `${TARGET_CHAIN}`) {
       handleError('Wrong chain. Connect to canto.')
       return;
@@ -132,9 +131,9 @@ export default function Home() {
                   <h1>{totalSupply}/{maxChads}</h1>
                 </div>
                 <div className="flex items-center mb-2">
-                  <img src="arrow-left.png" className="w-16 lg:w-28" onClick={reduceCount}/>
+                  <img src="arrow-left.png" className="w-16 lg:w-28 cursor-pointer" onClick={reduceCount}/>
                   <h1 className="text-3xl">{amountToMint}</h1>
-                  <img src="arrow-right.png" className="w-16 lg:w-28" onClick={incrementCount}/>
+                  <img src="arrow-right.png" className="w-16 lg:w-28 cursor-pointer" onClick={incrementCount}/>
                 </div>
                 <button onClick={handleMint} className="bg-canto mt-2 text-black px-5 py-2 w-48">
                   MINT {amountToMint} <span className="capitalize">{buttonCopy}</span>

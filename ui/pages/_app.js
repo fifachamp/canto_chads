@@ -83,10 +83,21 @@ const wagmiClient = createClient({
 
 function Chads({ Component, pageProps }) {
   useEffect(() => {
-    if (window?.ethereum) {
-      // window?.ethereum.on("accountsChanged", () => window.location.reload());
-      // window?.ethereum.on("chainChanged", () => window.location.reload());
-    }
+    console.log(
+      '\n' +
+      '....................../´¯/)\n' +
+      '....................,/¯../\n' +
+      '.................../..../\n' +
+      '.............../´¯/.../´¯¯`·¸\n' +
+      `........../'/.../..../......./¨¯\\\n` +
+      "........('(...´...´.... ¯~/'...')\n" +
+      "........\.................'...../\n" +
+      "..........''...\.......... _.·´\n" +
+      "............\..............(\n" +
+      "..............\.............\..." +  
+      '\n' +
+      'HEH'
+    );
   }, [])
 
   return (
