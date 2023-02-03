@@ -5,7 +5,6 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   env: {
-    CHAIN_ID: 5,
     ALCHEMY_ID: process.env.ALCHEMY_ID,
     CONTRACT_ADDRESS: process.env.CONTRACT_ADDRESS,
     TARGET_CHAIN: process.env.TARGET_CHAIN
