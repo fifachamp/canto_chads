@@ -1,0 +1,31 @@
+version: 2.1
+orbs:
+  node: circleci/node@4.7.0
+
+jobs:
+  build_and_test:
+    docker:
+      - image: cimg/node:16.11.1
+    steps:
+      - checkout
+      # look for existing cache and restore if found
+      - restore_cache:
+          key: v1-deps-{{ checksum "yarn.lock" }}
+      # install dependencies    
+      - run:
+          name: install dependencies
+          command: npm install
+      # save any changes to the cache
+      - save_cache:
+          key: v1-deps-{{ checksum "yarn.lock" }}
+          paths: 
+            - node_modules   
+      # run test suite
+      - run:
+          name: test
+          command: npm run test
+
+workflows:
+  my-custom-workflow:
+    jobs:
+      - build_and_test

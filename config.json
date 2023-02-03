@@ -1,0 +1,117 @@
+{
+  "layers": [
+    {
+      "name": "House",
+      "values": [
+        "A Brighter Poopy Day",
+        "Bird on Poop",
+        "My Lonesome Poop",
+        "Nude Homeless Pooper",
+        "Orange Car Poop Fourteen Times",
+        "Perfect Poop",
+        "Sexy Poop",
+        "The Splash",
+        "Trainspooping",
+        "Woman with a Poop"
+      ],
+      "trait_path": "./trait-layers/House",
+      "filename": [
+        "A Brighter Poopy Day",
+        "Bird on Poop",
+        "My Lonesome Poop",
+        "Nude Homeless Pooper",
+        "Orange Car Poop Fourteen Times",
+        "Perfect Poop",
+        "Sexy Poop",
+        "The Splash",
+        "Trainspooping",
+        "Woman with a Poop"
+      ],
+      "weights": [10,10,10,10,10,10,10,10,10,10]
+    },
+    {
+      "name": "Pool Depth",
+      "values": [
+        "Infinite ft",
+        "2 ft",
+        "3 ft",
+        "4 ft",
+        "5 ft",
+        "6 ft"
+      ],
+      "trait_path": "./trait-layers/Pool Depth",
+      "filename": [
+        "Infinite ft",
+        "2 ft",
+        "3 ft",
+        "4 ft",
+        "5 ft",
+        "6 ft"
+      ],
+      "weights": [16.6, 16.6, 16.6, 16.6, 16.6, 16.6]
+    },
+    {
+      "name": "Pool Water",
+      "values": [
+        "6BA1DB",
+        "6BC0DD",
+        "7CA594",
+        "CFDD68",
+        "default"
+      ],
+      "trait_path": "./trait-layers/Pool Water",
+      "filename": [
+        "6BA1DB",
+        "6BC0DD",
+        "7CA594",
+        "CFDD68",
+        "default"
+      ],
+      "weights": [20,20,20,20,20]
+    },
+    {
+      "name": "Person",
+      "values": [
+        "Baby",
+        "Dad",
+        "Dog",
+        "Mom",
+        "Son"
+      ],
+      "trait_path": "./trait-layers/Person",
+      "filename": [
+        "Baby",
+        "Dad",
+        "Dog",
+        "Mom",
+        "Son"
+      ],
+      "weights": [0,0,0,0,100]
+    },
+    {
+      "name": "Shit Color",
+      "values": [
+        "Brown",
+        "Diamond",
+        "Gold",
+        "Green",
+        "Silver"
+      ],
+      "trait_path": "./trait-layers/Shit Color",
+      "filename": [
+        "Brown",
+        "Diamond",
+        "Gold",
+        "Green",
+        "Silver"
+      ],
+      "weights": [40,4,10,30,16]
+    } 
+  ],
+  "incompatibilities": [
+    
+  ],
+  "baseURI": "https://res.cloudinary.com/hqsllgz1e/image/upload",
+  "name": "Poopy #",
+  "description": "poopy in the pool is an experimental whodunnit mystery game on the ethereum blockchain"
+}
