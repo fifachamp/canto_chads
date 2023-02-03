@@ -7,7 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNetwork } from 'wagmi'
 
-const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS
+const CONTRACT_ADDRESS = "0xB21A279a298E9348A1aDaF87B4C1015Bd2FFB5aE"
 const TARGET_CHAIN = process.env.TARGET_CHAIN
 
 import { ConnectButton } from '@rainbow-me/rainbowkit';
