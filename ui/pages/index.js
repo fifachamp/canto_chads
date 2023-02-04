@@ -16,7 +16,7 @@ export default function Home() {
   const [contract, setContract] = useState(false)
   const [amountToMint, setAmountToMint] = useState(1)
   const [maxChads, setMaxChads] = useState(2222)
-  const [totalSupply, setTotalSupply] = useState(0)
+  const [totalSupply, setTotalSupply] = useState(186)
   const [priceFormatted, setPriceFormatted] = useState(111)
   const {chain} = useNetwork()
 
@@ -113,9 +113,6 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
       </Head>
-      <audio loop autoPlay className={styles.audio}>
-        <source src="/kill-everybody.mp3" type="audio/mpeg"/>
-      </audio>
       <ToastContainer />
       <main className={`${styles.main} mt-12 lg:mt-20`}>
         <div className="flex flex-col lg:flex-row px-8 lg:px-20">
